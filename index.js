@@ -15,7 +15,7 @@ const server = http.createServer(app)
 // solve cors issue
 const options={
     cors:true,
-    origins:["http://localhost:3000"],
+    origins:["*"],
 }
 
 const io = socketIO(server, options)
